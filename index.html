@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="cl" >
+<head>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	 <link rel="stylesheet" type="text/css" href="css/custom.css">
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+     <script src="js/angular.min.js"></script>
+	 <script src="js/angular-animate.js"></script>
+	 <script src="js/angular-route.js"></script>
+	 <script src="js/angularjs-crypto.js"></script>
+	 <script src="js/CryptoJSCipher.js"></script>
+	 <script type='text/javascript' src="js/aes.js"></script>
+	 <script src="js/control.js"></script>
+	 <!--<script src="js/gmap.js"></script>
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJdf998XTbXdivat5QCrdsD1sCW7mVSc8"></script>-->
+	 <title>CoderLanguages</title>
+	 <link rel="shortcut icon" type="image/png" href="images/link_icon.png">
+</head>
+<body ng-controller="clickable" >
+
+	<!--google adsense-->
+	<div style="display:none;">
+	Java, C, C++, C#, Python, Ruby, R, HTML, CSS, JavaScript, PHP, SQl, MySQL, DB2, Oracle, Postgres/ PostgreSQL, SQL Server, Sybase, NoSQL, AJAX, JSON, REST, SOAP, AngularJS, Vue.js, React.js, Bigtable, Hadoop, HBase, Hive, Cassandra, Voldemort, BootStrap, CodeIgniter, Electron.js, Ionic.js, Hibernate, Spring, Struts, Kotin, Scala, Laravel, Node.js, CakePHP, Panda, NumPy, matplotlib, XML, Android, Apple, iOS, API, Compilers, Interpreters, Editors, Notepad, Atom, Sublime, Vim, Emacs, HackerEarth, HackerRank, Codechef, Topcoders, Udacity, Coursera, DataCamp, GeeksforGeeks, Udemy, WebApp, Hybrid Apps, Dark Web, Deep Web, Surface Web.  
+	</div>
+
+	<!--static header-->
+	<header class="site-header container-fluid navbar-fixed-top" id="header" >
+		<div class="top-header" id="toperr">
+			<div class="logo" style="float:left;">
+				<img src="images/logo 4.jpg" width="70px" height="70px" style="border-radius:50%" id="logoimg">&nbsp;
+					<h1><a href="#/" style="text-decoration:none;"><em>Coder</em>Languages</a></h1><span><i>Everything_a_Beginner_needs</i></span>
+			</div><!--social media buttons -->
+			<div class="social-media">
+				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcoderlanguages.com%2F%23%21%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore fa fa-facebook" ></a>
+				<a href="https://twitter.com/share?url=http://coderlanguages.com&text=I wanted you to see this site&amp;body=Check out this site http://coderlanguages.com " target="_blank" class="fa fa-twitter"></a>
+				<a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://coderlanguages.com" target="_blank" class="fa fa-envelope"></a>
+				<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://coderlanguages.com&title=A website for beginners&summary=Check out this site" target="_blank" class="fa fa-linkedin"></a>
+			</div><!--social media buttons end-->
+		</div>
+		
+		<!-- Facebook Share button-->
+		<div id="fb-root">
+		</div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!--navbar starts-->
+		<nav class=" navbar navbar-default" >
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-collapse collapse " id="myNavbar">
+				<ul class="nav navbar-nav mr-auto " >
+				  <li><a href="#/">Home</a></li>
+				  <li class="dropdown" style="cursor:pointer;"><a class="dropdown-toggle" data-toggle="dropdown" >Featured<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					  <li><a href="#!language">Languages</a></li>
+					  <li><a href="#!framework">Frameworks</a></li>
+					  <li><a href="#!practise">Practise sites</a></li>
+						<li><a href="#!learning">Ways to Learn</a></li>
+						<li><a href="#!editors">Editors</a></li>
+						
+					</ul>
+				 </li>
+				<li class="dropdown" style="cursor:pointer;" ><a class="dropdown-toggle" data-toggle="dropdown" >Essentials<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					    <li><a href="#!keywords">Web Keywords</a></li>
+					    <li><a href="#!web">Web Development</a></li>
+						<!--<li><a href="#!youtube">Recommended Youtube Channels</a></li>-->
+						<li><a href="#!firstlanguage">Choose Your First-Language</a></li>
+						<li><a href="#!frameworkvslibrary">Frameworks vs Libraries</a></li>
+						<li><a href="#!futuretech">Future Tech</a></li>
+						<!--<li><a href="#!survey">HackerRank Survey</a></li>-->
+						<li><a href="#!api">What is API?</a></li>
+						<li><a href="#!cvi">Compiler / Interpreter</a></li>
+						<li><a href="#!software">Software development</a></li>
+						<li><a href="#!style_of_coding">Types/Style of coding</a></li>
+						<li><a href="#!deep_web">Surface, Deep and Dark Web </a></li>
+						<!--<li><a href="#!soapandrest">SOAP vs RESTful services</a></li>
+						<li><a href="#!tips">Some Tips</a></li>-->
+					</ul>
+				  </li>
+				  <li><a href="#!about">About Me</a></li>
+				  <li><a href="#!contact ">Any Query?</a></li>
+				</ul>
+				</div>
+			  </div>
+			  </div>
+		</nav>	<!--navbar ends-->		
+	</header><!--header ends-->
+	
+	<div class="main_content"> <!--body-->
+		<div class="container-fluid text-center">   
+			<div class="row content">
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 text-left" > 
+					<div ng-view class="am">
+					</div> 
+				</div>
+							<!--sidebar-->
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 sidebar_right" style="position:fixed; right:0; padding:5px;" ng-controller="mycontroller" > 
+					<div>
+						<button ng-click="goback()" ><span class="glyphicon glyphicon-arrow-left"> Back</button>
+					</div>
+					<div id="slideshow">
+								<div><blockquote>If you want to reduce software deterioration, you'll have to do better software design
+								</div>
+								<div><blockquote>In theory there is no difference between theory and practice. But, in practice, there is.
+								</div>
+								<div><blockquote>The truth is that you always know the right thing to do. The hard part is doing it.
+								</div>
+								<div><blockquote>He who asks a question is a fool for five minutes; he who does not is a fool forever 
+								</div>
+								<div><blockquote>If there's a 'trick' to it, the User Interface is broken.
+								</div>
+								<div><blockquote>If a site is perfectly usable but it lacks an elegant design style, it will fail.
+								</div>
+								<div><blockquote>To err is human, to find a bug is divine 
+								</div>
+								<div><blockquote>Optimism is the occupational hazard of programming; testing is the treatment 
+								</div>
+								<div><blockquote>Every program does something right, it may not be the thing we want it to do
+								</div>
+					</div>
+					<div>
+						<button class="glyphicon glyphicon-chevron-up" onclick="topFunction()"  title="Go to top"> Top</button>
+					</div>
+				</div><!--sidebar ends-->   
+			</div>
+		</div><!--fluid container ends-->
+	<br>
+	</div>
+	<script><!--Top button function-->
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	</script>
+	<!--main content ends-->
+	<!--static footer-->	
+	<footer class="container-fluid text-center fixed-bottom" >
+	<div class=" navbar " style="float:none;" >
+			  <div class="container-fluid" style="padding:5px; float:left;text-align:left;">
+			  <p>Have a Glance At</p>
+				<ul class="nav navbar-nav " style="border-top: 3px double white;">
+				  <li><a href="#!learning">Learning sites</a></li>
+				  <li><a href="#!practise">Practise sites</a></li>
+				  <li><a href="#!editors">Importance of Editors</a></li>
+				</ul>
+			  </div>
+	</div>
+		<div><i><p id ="year"></p></i></div>
+	</footer>
+	<script type="text/javascript">
+		var d = new Date();
+		var n = d.getFullYear();
+		var f = "Copyright © ";
+		var g = " by Tushar Jumani";
+		var l = f + n + g;
+		document.getElementById('year').innerHTML = l;
+	</script>
+	<script><!--slideshow of sidebar-->
+	$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() {
+		  $('#slideshow > div:first')
+			.fadeOut(1000)
+			.next()
+			.fadeIn(1000)
+			.end()
+			.appendTo('#slideshow');
+		}, 7000);
+	</script>
+</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
